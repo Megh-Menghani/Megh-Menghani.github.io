@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Megh Menghani | Unreal Engine Programmer</title>
+  <meta name="description" content="Megh Menghani builds gameplay systems in Unreal Engine. Work on Steam, Nintendo Switch, mobile, Netflix and real-time visualization.">
+  <meta property="og:title" content="Megh Menghani | Unreal Engine Programmer">
+  <meta property="og:description" content="Gameplay and multiplayer systems in Unreal Engine C++.">
+  <meta property="og:image" content="assets/images/showreel.jpg">
+  <meta name="theme-color" content="#151515">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=5">
+</head>
+<body>
+
+  <header class="menubar">
+    <div class="container menubar-inner">
+      <a href="#top" class="brand">
+        <img class="brand-mark" src="assets/images/megh-avatar.jpg" alt="" width="32" height="32">
+        <span>Megh Menghani</span>
+      </a>
+      <nav class="menubar-links" aria-label="Sections">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+      </nav>
+      <a href="assets/docs/resume.pdf" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Resume</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-copy">
+        <h1>Megh Menghani</h1>
+        <p class="hero-role">Unreal Engine gameplay programmer</p>
+        <p class="hero-sub">I build the systems players touch, in C++ and Blueprints. My work is on Steam, Switch and mobile, and I made a voice-driven game for Netflix.</p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View work</a>
+          <button type="button" class="btn btn-ghost js-copy-email">Copy email</button>
+        </div>
+      </div>
+
+      <figure class="viewport is-selected hero-viewport">
+        <figcaption class="viewport-bar">
+          <span>Showreel</span>
+          <span class="viewport-bar-meta">Unreal Engine</span>
+        </figcaption>
+        <video src="assets/video/showreel.mp4" poster="assets/images/showreel.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Showreel of Family Feud, Bull, Bahri, Origament, New Citizen and the Isotope inventory"></video>
+      </figure>
+    </section>
+
+    <section id="work" class="section container">
+      <h2 class="section-title">Work</h2>
+
+      <div class="project-pair">
+        <!-- New Citizen (Specpixel) -->
+        <article id="new-citizen" class="project reveal">
+          <figure class="viewport">
+            <figcaption class="viewport-bar">
+              <span>New Citizen</span>
+              <span class="viewport-bar-meta">Steam Early Access</span>
+            </figcaption>
+            <video class="js-main" src="assets/video/new-citizen-loop.mp4" poster="assets/images/new-citizen-1.jpg" muted loop playsinline preload="metadata" aria-label="New Citizen trailer clip"></video>
+          </figure>
+          <div class="thumbs thumbs-labeled">
+            <button type="button" class="is-active" data-video="assets/video/new-citizen-loop.mp4"><img src="assets/images/new-citizen-trailer.jpg" alt="" loading="lazy"><span>Trailer</span></button>
+            <button type="button" data-video="assets/video/new-citizen-mdt.mp4"><img src="assets/images/new-citizen-mdt.jpg" alt="" loading="lazy"><span>MDT chat</span></button>
+            <button type="button"><img src="assets/images/new-citizen-3.jpg" alt="A paramedic in front of the fire station with the emergency vehicle fleet" loading="lazy"><span>Station</span></button>
+            <button type="button"><img src="assets/images/new-citizen-1.jpg" alt="Police patrol on a city street" loading="lazy"><span>City</span></button>
+          </div>
+          <div class="details">
+            <h3 class="details-title">New Citizen</h3>
+            <p class="details-pitch">New Citizen is a player-run city on Steam. I built its firefighter and EMS roleplay, from the trucks to the patient's pulse.</p>
+            <ul class="built">
+              <li>WhatsApp-style private chat on the vehicle MDT. On-duty responders message each other, and every conversation is saved to a database, so it's still there after a server restart.</li>
+              <li>Six drivable emergency vehicles on FGear. I rebuilt the seat and door logic so each vehicle is set up from data instead of being hardcoded.</li>
+              <li>Fire that spreads from node to node, with cooldowns so it can't run wild. Crews put it out with water cannons as part of a full firefighter mission.</li>
+              <li>A medic system where any treatment can meet any condition, and each pairing moves the patient's vitals its own way. All of it lives in data assets.</li>
+            </ul>
+            <p class="stack">Specpixel Entertainment / UE5 / FGear / Multiplayer</p>
+            <div class="links">
+              <a href="https://store.steampowered.com/app/2019700/New_Citizen_Alpha/" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">View on Steam</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Origament (GodSpeed, Switch port) -->
+        <article id="origament" class="project reveal">
+          <figure class="viewport">
+            <figcaption class="viewport-bar">
+              <span>Origament</span>
+              <span class="viewport-bar-meta">Nintendo Switch port</span>
+            </figcaption>
+            <video class="js-main" src="assets/video/origament-loop.mp4" poster="assets/images/origament-1.jpg" muted loop playsinline preload="metadata" aria-label="Origament trailer clip"></video>
+          </figure>
+          <div class="thumbs">
+            <button type="button" class="is-active" data-video="assets/video/origament-loop.mp4"><img src="assets/images/origament-1.jpg" alt="Paper plane flying over a desert canyon" loading="lazy"></button>
+            <button type="button"><img src="assets/images/origament-2.jpg" alt="Paper cat beside a flying paper plane" loading="lazy"></button>
+            <button type="button"><img src="assets/images/origament-3.jpg" alt="Lantern-lit wooden walkway at night" loading="lazy"></button>
+          </div>
+          <div class="details">
+            <h3 class="details-title">Origament: A Paper Adventure</h3>
+            <p class="details-pitch">You play a paper letter that flies, sails and rolls across continents. I worked on the Switch port, mostly on making it run well on the hardware.</p>
+            <ul class="built">
+              <li>Performance work across the game: map, mesh, texture and Niagara optimization to hit Switch frame and memory targets.</li>
+              <li>Switch-specific platform work and device settings.</li>
+              <li>Save system improvements.</li>
+            </ul>
+            <p class="stack">GodSpeed Gaming Solutions / Unreal Engine / Switch</p>
+            <div class="links">
+              <a href="https://store.steampowered.com/app/3448430/Origament_A_Paper_Adventure/" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">View on Steam</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Family Feud (Netflix, O.A.K Studio) -->
+      <article id="family-feud" class="project project-feature reveal">
+        <div class="media">
+          <figure class="viewport">
+            <figcaption class="viewport-bar">
+              <span>Family Feud</span>
+              <span class="viewport-bar-meta"><img class="bar-logo" src="assets/images/netflix_logo_transparent.png" alt="" width="12" height="12">Netflix</span>
+            </figcaption>
+            <video class="js-main" src="assets/video/family-feud-loop.mp4" poster="assets/images/family-feud-loop.jpg" muted loop playsinline preload="metadata" aria-label="Family Feud gameplay clip, opening with the Netflix intro"></video>
+          </figure>
+          <div class="thumbs">
+            <button type="button" class="is-active" data-video="assets/video/family-feud-loop.mp4"><img src="assets/images/family-feud-loop.jpg" alt="Family Feud gameplay clip" loading="lazy"></button>
+            <button type="button"><img src="assets/images/family-feud-2.jpg" alt="The AI host in a pink suit reacting on stage" loading="lazy"></button>
+            <button type="button"><img src="assets/images/family-feud-3.jpg" alt="Survey board with a strike" loading="lazy"></button>
+          </div>
+        </div>
+
+        <div class="details">
+          <h3 class="details-title">Family Feud (Netflix)</h3>
+          <p class="details-pitch">You say your answer out loud. An LLM listens, decides if you got it, and the host reacts to you.</p>
+
+          <div class="details-group">
+            <div class="details-header">Project</div>
+            <dl class="props">
+              <dt>Role</dt><dd>Game Programmer</dd>
+              <dt>Studio</dt><dd>O.A.K Studio</dd>
+              <dt>Client</dt><dd>Netflix</dd>
+              <dt>Engine</dt><dd>Unreal Engine</dd>
+            </dl>
+          </div>
+
+          <div class="details-group">
+            <div class="details-header">What I built</div>
+            <ul class="built">
+              <li>The runtime path from the player's mic to the LLM and back into game state.</li>
+              <li>Game flow that follows the AI's verdict: rounds, strikes, scoring and the host's reactions.</li>
+            </ul>
+          </div>
+          <p class="note">Netflix cancelled the project before release.</p>
+        </div>
+      </article>
+
+      <div class="project-pair">
+        <!-- Bull (O.A.K Studio gameplay demo) -->
+        <article id="bull" class="project reveal">
+          <figure class="viewport">
+            <figcaption class="viewport-bar">
+              <span>Bull</span>
+              <span class="viewport-bar-meta">Gameplay demo</span>
+            </figcaption>
+            <video class="js-main" src="assets/video/bull-loop.mp4" poster="assets/images/bull-loop.jpg" muted loop playsinline preload="metadata" aria-label="Bull combat clip: a bull tossing matadors around an arena"></video>
+          </figure>
+          <div class="thumbs thumbs-labeled">
+            <button type="button" class="is-active" data-video="assets/video/bull-loop.mp4"><img src="assets/images/bull-loop.jpg" alt="" loading="lazy"><span>Combos</span></button>
+            <button type="button" data-video="assets/video/bull-run.mp4"><img src="assets/images/bull-run.jpg" alt="" loading="lazy"><span>Bull cam</span></button>
+            <button type="button" data-video="assets/video/bull-charge.mp4"><img src="assets/images/bull-charge.jpg" alt="" loading="lazy"><span>Charge</span></button>
+          </div>
+          <div class="details">
+            <h3 class="details-title">Bull</h3>
+            <p class="details-pitch">A gameplay demo where you play the bull in a ring full of matadors. Charge, toss, smash.</p>
+            <ul class="built">
+              <li>Extended the Combat Fury plugin for a four-legged hero: charges, combos, hit reactions and knockbacks.</li>
+              <li>Tuned the timing, impacts and camera until every hit felt heavy.</li>
+            </ul>
+            <p class="stack">O.A.K Studio / Unreal Engine / Combat Fury</p>
+          </div>
+        </article>
+
+        <!-- Isotope inventory (client project, NYC) -->
+        <article id="inventory" class="project reveal">
+          <figure class="viewport">
+            <figcaption class="viewport-bar">
+              <span>Isotope</span>
+              <span class="viewport-bar-meta">C++ / UMG</span>
+            </figcaption>
+            <video class="js-main" src="assets/video/inventory-marquee.mp4" poster="assets/images/inventory-marquee.jpg" muted loop playsinline preload="metadata" aria-label="Marquee selection in the inventory grid"></video>
+          </figure>
+          <div class="thumbs thumbs-labeled">
+            <button type="button" class="is-active" data-video="assets/video/inventory-marquee.mp4"><img src="assets/images/inventory-marquee.jpg" alt="" loading="lazy"><span>Marquee select</span></button>
+            <button type="button" data-video="assets/video/inventory-multi.mp4"><img src="assets/images/inventory-multi.jpg" alt="" loading="lazy"><span>Multi-item move</span></button>
+            <button type="button" data-video="assets/video/inventory-sort.mp4"><img src="assets/images/inventory-sort.jpg" alt="" loading="lazy"><span>Sort menu</span></button>
+          </div>
+          <div class="details">
+            <h3 class="details-title">Isotope (Extraction Shooter) Advanced Inventory System</h3>
+            <p class="details-pitch">In an extraction shooter, how fast you can loot decides whether you get out alive. Over three months I took a marketplace inventory plugin (IFP) and made it handle like Escape from Tarkov's, in replicated C++.</p>
+            <ul class="built">
+              <li>Windows-style marquee selection that skips empty tiles and works in your own bags and in external containers.</li>
+              <li>Quick transfer, quick loot and auto-stacking, with a queue that sends items to the last container you used.</li>
+              <li>Shift-drag splits a stack in half, the scroll wheel changes the count mid-drag, Ctrl-drag takes one, Alt moves a batch.</li>
+              <li>Packing with rotation and ghost previews when you drag several items at once, plus sorting by name, category, weight, rarity, stack size or price.</li>
+            </ul>
+            <p class="stack">Client project, NYC / C++ / Replication / UMG</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Bahri (PropVR) -->
+      <article id="bahri" class="project project-feature project-feature--flip reveal">
+        <div class="media">
+          <figure class="viewport">
+            <figcaption class="viewport-bar">
+              <span>Bahri Chemicals</span>
+              <span class="viewport-bar-meta">Digital twin</span>
+            </figcaption>
+            <video class="js-main" src="assets/video/bahri-loop.mp4" poster="assets/images/bahri-loop.jpg" muted loop playsinline preload="metadata" aria-label="Bahri tanker walkthrough clip"></video>
+          </figure>
+          <div class="thumbs">
+            <button type="button" class="is-active" data-video="assets/video/bahri-loop.mp4"><img src="assets/images/bahri-loop.jpg" alt="Bahri walkthrough clip" loading="lazy"></button>
+            <button type="button"><img src="assets/images/bahri-2.jpg" alt="Walking the tanker's deck" loading="lazy"></button>
+            <button type="button"><img src="assets/images/bahri-3.jpg" alt="The ship's bridge" loading="lazy"></button>
+          </div>
+        </div>
+
+        <div class="details">
+          <h3 class="details-title">Bahri</h3>
+          <p class="details-pitch">An interactive digital twin of a full chemical tanker for Bahri. You can explore the whole ship on foot: deck, corridors, engine room and bridge.</p>
+
+          <div class="details-group">
+            <div class="details-header">Project</div>
+            <dl class="props">
+              <dt>Role</dt><dd>Unreal Programmer</dd>
+              <dt>Studio</dt><dd>PropVR</dd>
+              <dt>Client</dt><dd>Bahri</dd>
+              <dt>Engine</dt><dd>Unreal Engine, C++</dd>
+            </dl>
+          </div>
+
+          <div class="details-group">
+            <div class="details-header">What I built</div>
+            <!-- VERIFY: swap in exactly what you built on Bahri -->
+            <ul class="built">
+              <li>Walkthrough controls and cameras for exploring a full-size ship on foot.</li>
+              <li>Interactive points and UI layered over the model.</li>
+              <li>Optimization so a huge, detailed ship stays smooth.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <div class="project-pair">
+        <!-- Hangry Petz (Carina Softlabs) -->
+        <article id="hangry-petz" class="project reveal">
+          <figure class="viewport">
+            <figcaption class="viewport-bar">
+              <span>Hangry Petz</span>
+              <span class="viewport-bar-meta">iOS &amp; Android</span>
+            </figcaption>
+            <img class="js-main" src="assets/images/hangry-petz-1.jpg" alt="Hangry Petz key art with the cast of round pets" width="1600" height="900" loading="lazy">
+          </figure>
+          <div class="thumbs">
+            <button type="button" class="is-active"><img src="assets/images/hangry-petz-1.jpg" alt="Hangry Petz key art with the cast of round pets" loading="lazy"></button>
+            <button type="button"><img src="assets/images/hangry-petz-2.jpg" alt="A pet chasing a food truck" loading="lazy"></button>
+            <button type="button"><img src="assets/images/hangry-petz-3.jpg" alt="A pet digging up a city street" loading="lazy"></button>
+          </div>
+          <div class="details">
+            <h3 class="details-title">Hangry Petz</h3>
+            <p class="details-pitch">Hungry pets wreck an open world looking for food, together, across iPhones and Android phones.</p>
+            <ul class="built">
+              <li>Multiplayer that plays smoothly between iOS and Android.</li>
+              <li>A replicated boss with several attack patterns, plus a different miniboss for each region.</li>
+              <li>In-app purchases on both stores, each with its own platform quirks.</li>
+              <li>A core tree upgrade system, built to take new content without rework.</li>
+            </ul>
+            <p class="stack">Carina Softlabs / Unreal Engine / Multiplayer</p>
+            <div class="links">
+              <a href="https://apps.apple.com/us/app/hangry-petz/id6737511091" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">App Store</a>
+              <a href="https://play.google.com/store/apps/details?id=com.miracleskies.hangrypetz" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Google Play</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- JUNK! (301 LLC) -->
+        <article id="junk" class="project reveal">
+          <figure class="viewport">
+            <figcaption class="viewport-bar">
+              <span>JUNK!</span>
+              <span class="viewport-bar-meta">Coming to Steam</span>
+            </figcaption>
+            <video class="js-main" src="assets/video/junk-loop.mp4" poster="assets/images/junk-loop.jpg" muted loop playsinline preload="metadata" aria-label="JUNK! teaser clip"></video>
+          </figure>
+          <div class="thumbs">
+            <button type="button" class="is-active" data-video="assets/video/junk-loop.mp4"><img src="assets/images/junk-loop.jpg" alt="JUNK! teaser clip" loading="lazy"></button>
+            <button type="button"><img src="assets/images/junk-1.jpg" alt="Robot select screen" loading="lazy"></button>
+            <button type="button"><img src="assets/images/junk-3.jpg" alt="Two robots fighting under a red energy dome" loading="lazy"></button>
+          </div>
+          <div class="details">
+            <h3 class="details-title">JUNK!</h3>
+            <p class="details-pitch">A fast 1v1 robot brawler. Fight friends, strangers or an AI trainer to unlock new robots, abilities and parts.</p>
+            <ul class="built">
+              <li>The camera system that follows both robots through fast arena fights.</li>
+              <li>Robot animations, so each robot moves and attacks with its own weight.</li>
+              <li>Menus and robot select, plus the in-match HUD.</li>
+            </ul>
+            <p class="stack">O.A.K Studio / Animation / UI</p>
+            <div class="links">
+              <a href="https://store.steampowered.com/app/2178300/JUNK/" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">View on Steam</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section container">
+      <h2 class="section-title">Experience</h2>
+      <ol class="panel xp reveal">
+        <li class="xp-row">
+          <img class="xp-logo" src="assets/images/logos/specpixel.png" alt="" width="36" height="36">
+          <div class="xp-company">
+            <a href="https://www.specpixel.com" target="_blank" rel="noopener">Specpixel Entertainment</a>
+            <span>Melbourne, Australia</span>
+          </div>
+          <div class="xp-role">Gameplay &amp; Systems Programmer</div>
+          <ul class="xp-projects chips"><li><a href="#new-citizen">New Citizen</a></li></ul>
+        </li>
+        <li class="xp-row">
+          <img class="xp-logo" src="assets/images/logos/propvr.png" alt="" width="36" height="36">
+          <div class="xp-company">
+            <a href="https://www.linkedin.com/company/propvr/" target="_blank" rel="noopener">PropVR</a>
+            <span>India &amp; Dubai</span>
+          </div>
+          <div class="xp-role">Unreal Programmer</div>
+          <ul class="xp-projects chips"><li><a href="#bahri">Bahri</a></li></ul>
+        </li>
+        <li class="xp-row">
+          <img class="xp-logo" src="assets/images/logos/oak.png" alt="" width="36" height="36">
+          <div class="xp-company">
+            <a href="https://oakstudio.co.in" target="_blank" rel="noopener">O.A.K Studio</a>
+            <span>Kolkata, India</span>
+          </div>
+          <div class="xp-role">Game Programmer</div>
+          <ul class="xp-projects chips"><li><a href="#family-feud">Family Feud (Netflix)</a></li><li><a href="#bull">Bull</a></li><li><a href="#junk">JUNK!</a></li></ul>
+        </li>
+        <li class="xp-row">
+          <img class="xp-logo" src="assets/images/logos/godspeed.png" alt="" width="36" height="36">
+          <div class="xp-company">
+            <a href="https://www.godspeedgames.com" target="_blank" rel="noopener">GodSpeed Gaming Solutions</a>
+            <span>India</span>
+          </div>
+          <div class="xp-role">Associate Senior Unreal Developer <small>Freelance</small></div>
+          <ul class="xp-projects chips"><li><a href="#origament">Origament (Switch)</a></li></ul>
+        </li>
+        <li class="xp-row">
+          <img class="xp-logo" src="assets/images/logos/carina.png" alt="" width="36" height="36">
+          <div class="xp-company">
+            <a href="https://www.carinasoftlabs.com" target="_blank" rel="noopener">Carina Softlabs</a>
+            <span>India &amp; USA</span>
+          </div>
+          <div class="xp-role">Senior Programmer</div>
+          <ul class="xp-projects chips"><li><a href="#hangry-petz">Hangry Petz</a></li></ul>
+        </li>
+      </ol>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2 class="section-title">Skills</h2>
+      <div class="panel reveal">
+        <div class="skill-row">
+          <span class="skill-label">Languages</span>
+          <ul class="chips"><li>C++</li><li>Unreal Blueprints</li></ul>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Unreal</span>
+          <ul class="chips"><li>Replication (Multiplayer)</li><li>GAS</li><li>Animation Programming</li><li>UMG</li><li>Unreal Insights</li><li>Platform porting</li></ul>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Systems</span>
+          <ul class="chips"><li>Inventory</li><li>Melee combat</li><li>Vehicles</li><li>Voice input &amp; LLMs</li><li>Archviz &amp; digital twins</li><li>Extending marketplace plugins</li></ul>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Platforms</span>
+          <ul class="chips"><li>PC / Steam</li><li>PS5</li><li>Nintendo Switch</li><li>iOS</li><li>Android</li></ul>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Source control</span>
+          <ul class="chips"><li>Perforce</li><li>Git</li><li>Sourcetree</li><li>TortoiseGit</li><li>Plastic SCM</li><li>SVN</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container about">
+      <div class="about-text reveal">
+        <h2 class="section-title">About</h2>
+        <p>I'm an Unreal programmer with four years of shipping games and real-time projects. I care most about how things feel in your hands: movement, combat, inventory, vehicles, and the netcode that keeps it all in sync.</p>
+        <p>Much of my work starts with something that already exists, like a marketplace plugin or a live codebase, and takes it further than it was built to go. Studios in Australia, India, Dubai and the US have hired me to do exactly that.</p>
+      </div>
+      <dl class="props about-props reveal">
+        <dt>Focus</dt><dd>Gameplay &amp; multiplayer</dd>
+        <dt>Engine</dt><dd>Unreal Engine</dd>
+        <dt>Based in</dt><dd>Mumbai, India</dd>
+        <dt>Open to</dt><dd>Studio roles, contracts, remote</dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-lead">Need an Unreal programmer? Say hi.</p>
+        <button type="button" class="footer-email js-copy-email">meghmenghani@gmail.com</button>
+      </div>
+      <nav class="footer-links" aria-label="Elsewhere">
+        <a href="https://www.linkedin.com/in/megh-menghani/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Megh-Menghani" target="_blank" rel="noopener">GitHub</a>
+        <a href="assets/docs/resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite">Email copied</div>
+
+  <script src="js/main.js?v=4"></script>
+</body>
+</html>

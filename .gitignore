@@ -1,0 +1,9 @@
+# Raw source recordings and private files (too big to host, and the
+# Isotope timelog has client hours). GitHub rejects files over 100 MB.
+_raw/
+
+# Working notes: kept locally, not published with the site
+PROJECTS.md
+RESEARCH.md
+DESIGN.md
+assets/docs/README.txt
