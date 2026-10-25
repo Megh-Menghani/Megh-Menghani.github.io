@@ -154,8 +154,9 @@
           <div class="details-group">
             <div class="details-header">What I built</div>
             <ul class="built">
-              <li>Runtime pipeline from player mic input to the LLM and back into game state.</li>
+              <li>Delegate-based callbacks that drive the game world and UI from LLM responses.</li>
               <li>Game flow driven by the LLM's verdict: rounds, strikes, scoring and host reactions.</li>
+              <li>Game UI and testing.</li>
             </ul>
           </div>
           <p class="note">Netflix cancelled the project before release.</p>
@@ -174,15 +175,17 @@
           </figure>
           <div class="thumbs thumbs-labeled">
             <button type="button" class="is-active" data-video="assets/video/bull-loop.mp4"><img src="assets/images/bull-loop.jpg" alt="" loading="lazy"><span>Combos</span></button>
-            <button type="button" data-video="assets/video/bull-run.mp4"><img src="assets/images/bull-run.jpg" alt="" loading="lazy"><span>Bull cam</span></button>
-            <button type="button" data-video="assets/video/bull-charge.mp4"><img src="assets/images/bull-charge.jpg" alt="" loading="lazy"><span>Charge</span></button>
+            <button type="button" data-video="assets/video/bull-supercharge.mp4"><img src="assets/images/bull-supercharge.jpg" alt="" loading="lazy"><span>Super charge</span></button>
+            <button type="button" data-video="assets/video/bull-dodge.mp4"><img src="assets/images/bull-dodge.jpg" alt="" loading="lazy"><span>Dodge</span></button>
           </div>
           <div class="details">
             <h3 class="details-title">Bull</h3>
             <p class="details-pitch">Gameplay demo: play as the bull in an arena full of matadors.</p>
             <ul class="built">
               <li>Extended the Combat Fury plugin for a quadruped character: charges, combos, hit reactions and knockbacks.</li>
-              <li>Attack timing, hit impact and combat camera tuning.</li>
+              <li>Matador cape cloth physics colliding with the matador and the ground, in one-hand and two-hand versions that hold up across all animations. Built in close loop with the artists.</li>
+              <li>Custom matador enemy AI, with health and target locking.</li>
+              <li>All UI, SFX and VFX setup.</li>
             </ul>
             <p class="stack">O.A.K Studio / Unreal Engine / Combat Fury</p>
           </div>
@@ -226,10 +229,10 @@
             </figcaption>
             <video class="js-main" src="assets/video/bahri-loop.mp4" poster="assets/images/bahri-loop.jpg" muted loop playsinline preload="metadata" aria-label="Bahri tanker walkthrough clip"></video>
           </figure>
-          <div class="thumbs">
-            <button type="button" class="is-active" data-video="assets/video/bahri-loop.mp4"><img src="assets/images/bahri-loop.jpg" alt="Bahri walkthrough clip" loading="lazy"></button>
-            <button type="button"><img src="assets/images/bahri-2.jpg" alt="Walking the tanker's deck" loading="lazy"></button>
-            <button type="button"><img src="assets/images/bahri-3.jpg" alt="The ship's bridge" loading="lazy"></button>
+          <div class="thumbs thumbs-labeled">
+            <button type="button" class="is-active" data-video="assets/video/bahri-loop.mp4"><img src="assets/images/bahri-loop.jpg" alt="" loading="lazy"><span>Walkthrough</span></button>
+            <button type="button" data-video="assets/video/bahri-weather.mp4"><img src="assets/images/bahri-weather.jpg" alt="" loading="lazy"><span>Weather</span></button>
+            <button type="button" data-video="assets/video/bahri-sailing.mp4"><img src="assets/images/bahri-sailing.jpg" alt="" loading="lazy"><span>Sailing</span></button>
           </div>
         </div>
 
@@ -249,11 +252,11 @@
 
           <div class="details-group">
             <div class="details-header">What I built</div>
-            <!-- VERIFY: swap in exactly what you built on Bahri -->
             <ul class="built">
-              <li>Walkthrough character and camera setup for a full-scale ship.</li>
-              <li>Interactive hotspots and UMG UI over the model.</li>
-              <li>Optimization for a large, high-detail model.</li>
+              <li>Ship movement and ship animation setup.</li>
+              <li>Weather simulation.</li>
+              <li>Base character, animation and idle camera setup.</li>
+              <li>Worked with an art team of 20+ to bring the whole ship together in engine.</li>
             </ul>
           </div>
         </div>
