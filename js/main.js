@@ -86,6 +86,9 @@ document.querySelectorAll('video').forEach(watchVideo);
 // The showreel autoplays on load; track it so the next video pauses it.
 if (!reduceMotion) current = document.querySelector('video[autoplay]');
 
+// Phones get the lighter 480p clips (*-m.mp4); the page's own videos pick them via <source media>.
+const phone = matchMedia('(max-width: 640px)').matches;
+
 // Thumbnail strips: swap the main shot (image, or video if the thumb has data-video).
 document.querySelectorAll('.thumbs').forEach(strip => strip.addEventListener('click', e => {
   const btn = e.target.closest('button');
@@ -93,7 +96,7 @@ document.querySelectorAll('.thumbs').forEach(strip => strip.addEventListener('cl
   const thumb = btn.querySelector('img');
   const video = btn.dataset.video;
   const el = document.createElement(video ? 'video' : 'img');
-  if (video) Object.assign(el, { src: video, poster: thumb.src, muted: true, loop: true, playsInline: true });
+  if (video) Object.assign(el, { src: phone ? video.replace(/\.mp4$/, '-m.mp4') : video, poster: thumb.src, muted: true, loop: true, playsInline: true });
   else Object.assign(el, { src: thumb.src, alt: thumb.alt });
   el.className = 'js-main';
   const old = strip.previousElementSibling.querySelector('.js-main');
